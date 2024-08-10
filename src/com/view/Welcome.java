@@ -64,7 +64,7 @@ public class Welcome extends JFrame {
 		JButton btnNewButton = new JButton("Admin Login");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				new LoginForm().setVisible(true);
 				dispose();
 			}
 		});
@@ -77,7 +77,7 @@ public class Welcome extends JFrame {
 		JButton btnNewButton_1 = new JButton("Cashier Login");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				new LoginFormCashier().setVisible(true);
 				dispose();
 			}
 		});
