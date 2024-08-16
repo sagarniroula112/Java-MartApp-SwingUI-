@@ -1,9 +1,9 @@
-package com.service;
+package com.martapp.service;
+
+import com.martapp.model.*;
 
 import java.util.List;
 
-import com.model.Bill;
-import com.model.Cashier;
 
 public interface BillService {
 	// comment

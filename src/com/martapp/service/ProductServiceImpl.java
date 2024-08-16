@@ -1,13 +1,12 @@
-package com.service;
+package com.martapp.service;
 
 import java.sql.Connection;
+import com.martapp.model.*;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.model.Product;
 
 public class ProductServiceImpl implements ProductService {
 

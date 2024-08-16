@@ -1,8 +1,7 @@
-package com.service;
+package com.martapp.service;
 
 import java.util.List;
-
-import com.model.Cashier;
+import com.martapp.model.*;
 
 public interface CashierService {
 	void addCashier(Cashier c);

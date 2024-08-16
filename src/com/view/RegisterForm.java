@@ -1,6 +1,7 @@
-package com.view;
+package com.martapp.view;
 
 import java.awt.Color;
+
 import java.awt.EventQueue;
 import java.awt.Font;
 
@@ -14,15 +15,14 @@ import javax.swing.border.EmptyBorder;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.model.Cashier;
-import com.service.CashierService;
-import com.service.CashierServiceImpl;
+import com.martapp.model.Cashier;
+import com.martapp.service.CashierService;
+import com.martapp.service.CashierServiceImpl;
 
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.ActionEvent;
-import javax.swing.JPasswordField;
 import javax.swing.JTextArea;
 
 public class RegisterForm extends JFrame {

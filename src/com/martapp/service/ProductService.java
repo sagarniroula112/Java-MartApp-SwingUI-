@@ -1,6 +1,6 @@
-package com.service;
+package com.martapp.service;
 
-import com.model.Product;
+import com.martapp.model.*;
 import java.util.List;
 
 public interface ProductService {

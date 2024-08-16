@@ -1,13 +1,12 @@
-package com.service;
+package com.martapp.service;
 
 import java.sql.Connection;
+import com.martapp.model.*;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.model.Cashier;
 
 public class CashierServiceImpl implements CashierService {
 
@@ -15,7 +14,7 @@ public class CashierServiceImpl implements CashierService {
 	public void addCashier(Cashier c) {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/javadb", "root", "hello");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/javadb?createDatabaseIfNotExist=true", "root", "hello");
 			String sql = "insert into cashier (name, phone, address, email, password) values('" + c.getName() + "', '" + c.getPhone() + "', '" + c.getAddress() + "', '" + c.getEmail() + "', '" + c.getPassword() + "')";
 			Statement stm = con.createStatement();
 			stm.execute(sql);
