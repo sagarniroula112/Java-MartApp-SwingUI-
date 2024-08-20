@@ -1,4 +1,4 @@
-package com.view;
+package com.martapp.view;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import java.awt.EventQueue;

@@ -1,4 +1,4 @@
-package com.view;
+package com.martapp.view;
 
 import java.awt.EventQueue;
 
